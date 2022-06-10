@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  </head>
+  <body>
+    <script>
+      // length Sets or returns the number of elements in an array
+      // concat() Joins two or more arrays, and returns a copy of the joined arrays.
+      // indexOf() Search the array for an element and returns its position
+      // isArray() Checks whether an object is an array
+      // pop() Removes the last element of an array, and returns that element
+      // push() Adds new elements to the end of an array, and returns the new length
+
+      var array = ['BMW','AUDI','TATA'];
+      document.write(array.length);
+      document.write("<br>");
+
+      document.write(array.concat("JAG"));
+      document.write("<br>");
+
+      document.write(array.indexOf("AUDI"));
+      document.write("<br>");
+
+      array.sort();
+      document.write(array);
+      document.write("<br>");
+
+      array.push("push")
+      document.write(array);
+      document.write("<br>");
+
+      array.pop()
+      document.write(array);
+      document.write("<br>");
+
+      array.reverse()
+      document.write(array);
+      document.write("<br>");
+      
+      var a = Array.isArray(array)
+      document.write(a);
+      document.write("<br>");
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  </head>
+  <body>
+    <script>
+      // JavaScript, methods, and properties are also available to primitive values, because JavaScript treats primitive values as objects when executing methods and properties.
+
+      // 0: The length property returns the length of a string
+      // 1:The charAt() method returns the character at a specified index (position) in a string
+      // 2: Finding a String in a String
+      // The indexOf() method returns the index of (the position of) the first occurrence of a specified text in a string
+      // 3: The lastIndexOf() method returns the index of the last occurrence of a specified text in a string
+      // Both the indexOf(), and the lastIndexOf() methods return -1 if the text is not found
+      // 4: The replace() method replaces a specified value with another value in a string
+      // 5:A string is converted to upper case with toUpperCase()
+      // 6:A string is converted to lower case with toLowerCase()
+      // 7: concat() joins two or more strings 
+
+      var des = "this is an example of string is";
+      var con = "it is concat string"
+      document.write(des.length);
+      document.write("<br>");
+      document.write(des.charAt(3));
+      document.write("<br>");
+      document.write(des.indexOf('is'));
+      document.write("<br>");
+      document.write(des.lastIndexOf('is'));
+      document.write("<br>");
+      document.write(des.replace('is','to'));
+      document.write("<br>");
+      document.write(des.toUpperCase());
+      document.write("<br>");
+      document.write(des.toLowerCase());
+      document.write("<br>");
+      document.write(des.concat(con));
+    </script>
+  </body>
+</html>

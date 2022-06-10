@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  </head>
+  <body>
+    <h3>Enter your choice</h3>
+    <li>Add</li>
+    <li>Sub</li>
+    <li>Multiply</li>
+    <br>
+
+    <form>
+      <input type="text" name="" id="choices">
+      <button onclick="myfunc()">Click Me!</button>
+    </form>
+
+    <script type="text/javascript">
+      // Switch statment is used to select one of many block of code to be executed.
+
+      // Sytax:
+      //   switch(expression){
+      //     case constant : code;
+      //                     break;
+      //     case constant : code;
+      //                     break;
+      //     default : code;
+      //   }
+
+      var a=10;
+      var b=10;
+
+      function myfunc(){
+        var choice = document.getElementById("choices").value;
+        
+        switch(choice){
+          case "add" : document.write(a+b);
+                        break;
+
+          case "sub" : document.write(a-b);
+                        break;
+
+          case "multiply" : document.write(a*b);
+                        break;
+
+          default: alert("Invalid input");
+        }
+        
+      }
+    </script>
+  </body>
+</html>

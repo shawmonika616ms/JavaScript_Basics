@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  </head>
+  <body>
+    <h1 id="One">Hello there!</h1>
+    <h2 class="main">Hello there!</h2>
+    <a href="/me.html">My other page</a>
+    <script>
+      // Also, DOM: Get Elements by ID, Tag, Name, Class, CSS Selector etc. The easiest way to access a single element in the DOM is by its unique ID. We can grab an element by ID with the getElementById() method of the document object. document.getElementById(); In order to be accessed by ID, the HTML element must have an id attribute.getelementbyid
+
+      var a;
+      a = document.getElementById('One').innerHTML;
+      document.write(a);
+
+      var b;
+      b = document.getElementsByClassName('main')[0].innerHTML;
+      console.log(b);
+
+      var c;
+      c = document.getElementsByTagName('h1')[0].innerHTML;
+      console.log(c);
+    </script>
+  </body>
+</html>

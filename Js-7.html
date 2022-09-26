@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  </head>
+  <body>
+    <h1>Hello there!</h1>
+    <a href="/me.html">My other page</a>
+    <script>
+      //switch case
+      // if there are different conditions for diferent values
+      // switch statement is used to slect one of many block of code to be executed.
+
+      //syntax
+      // Sytax:
+      //   switch(expression){
+      //     case constant : code;
+      //                     break;
+      //     case constant : code;
+      //                     break;
+      //     default : code;
+      //   }
+      'use strict';
+      var a = 10,
+        b = 20;
+      var result = 'add';
+
+      switch (result) {
+        case 'add':
+          document.write(a + b);
+          break;
+        case 'mul':
+          document.write(a * b);
+          break;
+        case 'sub':
+          document.write(a - b);
+          break;
+
+        default:
+          document.write('Invalid Input');
+      }
+    </script>
+  </body>
+</html>

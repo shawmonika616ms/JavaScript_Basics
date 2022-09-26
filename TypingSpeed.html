@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo&display=swap"
+      rel="stylesheet"
+    />
+    <title>Typing Test</title>
+  </head>
+  <body>
+    <div class="mainDiv">
+      <div class="centerDiv">
+        <h1>Welcome to Typing Speed Test</h1>
+        <h2 id="msg"></h2>
+        <textarea
+          id="mywords"
+          cols="100"
+          rows="10"
+          placeholder="Remember"
+        ></textarea>
+        <br /><br />
+        <button id="btn" class="mainbtn">Start</button>
+      </div>
+    </div>
+
+    <script>
+      const words = document.getElementById('mywords');
+      const heading = document.getElementById('msg');
+      const show = ['Hello', 'Good Morning', 'Hii', 'Good Evening'];
+      let StartTime, endTime;
+
+      function myfun() {
+        const random = Math.floor(Math.random() * show.length);
+        heading.innerText = show[random];
+        let d = new Date();
+        StartTime = d.getTime();
+        btn.innerText = 'Done';
+      }
+
+      function myfun1() {
+        let d = new Date();
+        endTime = d.getTime();
+        let totTime = (endTime - StartTime) / 1000;
+        let totStr = words.value;
+        let wordc = wordCounter(totStr);
+
+        let speed = Math.floor((wordc / totTime) * 60);
+        let totspeed = ' you typed at ' + speed + ' words per min';
+
+        heading.innerText = totspeed;
+      }
+
+      function wordCounter(str) {
+        let res = str.split(' ').length;
+        console.log(res);
+        return res;
+      }
+      btn.addEventListener('click', function () {
+        if (this.innerText == 'Start') {
+          words.disabled = false;
+          myfun();
+        } else if ((this.innerText = 'Done')) {
+          words.disabled = true;
+          btn.innerText = 'Start';
+          myfun1();
+        }
+      });
+    </script>
+  </body>
+</html>

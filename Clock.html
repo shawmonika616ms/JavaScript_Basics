@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  </head>
+  <body>
+    <h1>Hello there!</h1>
+    <a href="/me.html">My other page</a>
+    <button>Click me</button>
+    <p id="show"></p>
+    <script>
+      var clock = setInterval(clocktime, 1000);
+
+      function clocktime() {
+        var d = new Date();
+        var temp = d.toLocaleTimeString();
+        document.getElementById('show').innerHTML = temp;
+      }
+    </script>
+  </body>
+</html>

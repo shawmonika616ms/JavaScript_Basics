@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  </head>
+  <body>
+    <h1>Hello there!</h1>
+    <a href="/me.html">My other page</a>
+    <!-- The named values, in JavaScript objects, are called properties.
+  Objects are Variables Containing Variables
+  JavaScript variables can contain single values.
+  
+  Objects are variables too. But objects can contain many values.
+  The values are written as name : value pairs (name and value separated by a colon).
+  
+  Accessing Object Properties
+  You can access object properties in two ways:
+  
+  objectName.propertyName
+  or
+  
+  objectName["propertyName"] -->
+    <script>
+      var intro = {
+        name: 'Ankit Kumar',
+        age: 21,
+        gender: 'Male',
+      };
+
+      console.log(intro);
+      console.log(intro.name);
+
+      intro.name = 'Aachal'; // chnaging the value
+      console.log(intro.name);
+
+      intro.relationstaus = 'complicated'; // adding value
+      console.log(intro);
+
+      delete intro.relationstaus;
+      console.log(intro);
+    </script>
+  </body>
+</html>

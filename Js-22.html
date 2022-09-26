@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  </head>
+  <body>
+    <button onclick="myfun()">Click me</button>
+    <script>
+      // The window.location object can be used to get the current page address (URL) and to redirect the browser to a new page.The location object contains information about the current URL. The location object is part of the window object and is accessed through the window.location property.
+
+      // Window Location Href
+      // The window.location.href property returns the URL of the current page.
+      // window.location.href;
+      // Window Location Hostname
+      // The window.location.hostname property returns the name of the internet host (of the current page).
+
+      // Window Location Pathname
+      // The window.location.pathname property returns the pathname of the current page.
+      // Window Location Protocol
+      // The window.location.protocol property returns the web protocol of the page.
+      // Window Location Assign
+      // The window.location.assign() method loads a new document.
+
+      function myfun() {
+        document.write(window.location);
+        document.write('<br>');
+        document.write(window.location.href);
+        document.write('<br>');
+        document.write(window.location.hostname);
+        document.write('<br>');
+        document.write(window.location.pathname);
+        document.write('<br>');
+        document.write(window.location.protocol);
+        document.write('<br>');
+        document.write(window.location.assign());
+      }
+    </script>
+  </body>
+</html>

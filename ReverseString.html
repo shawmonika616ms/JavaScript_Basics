@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1>Hello there!</h1>
+    <a href="/me.html">My other page</a>
+    <input type="text" name="str" id="str1" onkeyup="myfun()" />
+    <input type="text" name="str" id="str2" />
+
+    <script>
+      function myfun() {
+        var s1 = document.getElementById('str1').value;
+        var s2 = '';
+        console.log(s2);
+        for (var i = s1.length; i >= 0; i--) {
+          s2 += s1[i];
+        }
+        document.getElementById('str2').value = s2;
+      }
+    </script>
+  </body>
+</html>

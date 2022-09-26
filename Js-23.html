@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  </head>
+  <body>
+    <div id="one">
+      This is Div one
+      <button onclick="myfun('one')">One</button>
+    </div>
+
+    <div id="two">
+      This is Div two
+      <button onclick="myfun('two')">Two</button>
+    </div>
+
+    <button onclick="myfun3()">Outer Button</button>
+    <script>
+      // JavaScript | Window print() Method
+      // Page print in JavaScript is a simple code in JavaScript used to print the content of the web pages.
+
+      // The print() method prints the contents of the current window.
+      // It basically opens Print dialog box which lets you choose between various printing options.
+      // Syntax:
+
+      // window.print()
+      // Parameters - No parameters required
+      // Returns - This function do not return anything
+
+      // window.print();
+
+      function myfun3() {
+        window.print();
+      }
+
+      function myfun(paravalue) {
+        var param = document.getElementById(paravalue).innerHTML;
+        document.write(param);
+      }
+    </script>
+  </body>
+</html>

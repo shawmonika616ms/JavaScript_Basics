@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  </head>
+  <body>
+    <!-- // The setInterval() method calls a function or evaluates an expression at
+    specified intervals (in milliseconds). The setInterval() method will
+    continue calling the function until clearInterval() is called, or the window
+    is closed. The ID value returned by setInterval() is used as the parameter
+    for the clearInterval() method. // The clearInterval() method stops the
+    executions of the function specified in the setInterval() method. -->
+
+    <h1 id="time"></h1>
+    <button onclick="clearInterval(s)">click me</button>
+
+    <script>
+      // var h = d.getHours();
+      // var m = d.getMinutes();
+      // var s = d.getSeconds();
+      // document.write(h + ':' + m + ':' + s);
+
+      function myfun() {
+        var d = new Date();
+        var t = d.toLocaleTimeString();
+        document.getElementById('time').innerText = t;
+      }
+
+      var s = setInterval(myfun, 1000);
+    </script>
+  </body>
+</html>

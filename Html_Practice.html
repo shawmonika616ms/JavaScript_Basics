@@ -1,0 +1,160 @@
+<!-- <html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Web Page</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="//img.icons8.com/ios-glyphs/30/000000/bookmark-ribbon.png"
+    />
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <form>
+      <label for="fname">First Name:</label><br />
+      <input type="text" id="name" name="fname" />
+      <input type="radio" id="check" name="checks" value="click" />
+      <label for="click">HTML</label>
+      <input type="submit" id="btn" name="btn" value="an" />
+      <label for="btn">Button</label>
+
+      <table>
+        <tr>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+        </tr>
+        <tr>
+          <td>One</td>
+          <td>two</td>
+          <td>Three</td>
+        </tr>
+      </table>
+    </form>
+    <ul>
+      <li>one</li>
+    </ul>
+
+  </body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  background-color: lightgreen;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+</style>
+</head>
+<body>
+
+<p>Resize the browser window. When the width of this document is 600 pixels or less, the background-color is "lightblue", otherwise it is "lightgreen".</p>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .header {
+        border: 1px solid red;
+        padding: 15px;
+      }
+
+      .row::after {
+        content: '';
+        clear: both;
+        display: table;
+      }
+
+      [class*='col-'] {
+        float: left;
+        padding: 15px;
+        border: 1px solid red;
+      }
+
+      .col-3 {
+        width: 25%;
+      }
+
+      .col-9 {
+        width: 75%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Chania</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-3">
+        <ul>
+          <li>The Flight</li>
+          <li>The City</li>
+          <li>The Island</li>
+          <li>The Food</li>
+        </ul>
+      </div>
+
+      <div class="col-9">
+        <h1>The City</h1>
+        <p>
+          Chania is the capital of the Chania region on the island of Crete. The
+          city can be divided in two parts, the old town and the modern city.
+        </p>
+        <p>
+          Resize the browser window to see how the content respond to the
+          resizing.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-1">
+      <h1>Hello</h1>
+    </div>
+    <div class="col-2">
+      <h1>Hello</h1>
+    </div>
+    <div class="row">
+      <div class="col-1">
+        <h1>Hello</h1>
+      </div>
+      <div class="col-2">
+        <h1>Hello</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-1">
+        <h1>Hello</h1>
+      </div>
+      <div class="col-2">
+        <h1>Hello</h1>
+      </div>
+    </div>
+
+    <div class="grid-container">
+      <div class="item1">Header</div>
+      <div class="item2">Menu</div>
+      <div class="item3">Main</div>
+      <div class="item4">Right</div>
+      <div class="item5">Footer</div>
+    </div>
+  </body>
+</html>

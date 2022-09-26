@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  </head>
+  <body>
+    <h1>Reverse of a string</h1>
+    <input type="text" name="str1" id="inputString" onkeyup="reverseStr()" />
+    <input type="text" name="str1" id="revString" />
+
+    <script>
+        function reverseStr() {
+  var inpStr = document.getElementById('inputString').value;
+  var rev = '';
+  for (var i = inpStr.length - 1; i >= 0; i--) {
+    rev = rev + inpStr[i];
+  }
+
+  document.getElementById('revString').value = rev;
+}
+
+    </script>
+  </body>
+</html>

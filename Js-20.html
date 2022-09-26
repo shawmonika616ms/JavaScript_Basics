@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  </head>
+  <body>
+    
+    <h1 id="one">one<h1>
+    <h1>two</h1>
+    <h1 >three</h1>
+    <a href="/me.html">My other page</a>
+<ul><li>tea</li><li>coffee</li><li>milk</li></ul>
+    <script>
+    //  Parent, Child, and Sibling Nodes
+      // Any subnode of a given node is called a child node, and the given node, in turn, is the child’s parent. Sibling nodes are nodes on the same hierarchical level under the same parent node. Nodes higher than a given node in the same lineage are ancestors and those below it are descendants.The terms parent, child, and sibling are used to describe the relationships. In a node tree, the top node is called the root (or root node); Every node has exactly on e parent, except the root (which has no parent); A node can have a number of children; Siblings (brothers or sisters) are nodes with the same parent.   Methods are
+      // parentNode
+      // childNodes[nodenumber]
+      // firstChild
+      // lastChild
+      // nextSibling
+      // previousSibling
+
+     var a;
+     a=document.body.children;
+     console.log(a);
+
+     var b;
+     b=document.getElementById('one');
+     var text=document.createTextNode("Heloohiii");
+     b.appendChild(text);
+
+     var f;
+     f=document.querySelector('ul');
+
+     
+     console.log(f.firstChild);
+     console.log(f.lastChild);
+
+
+     var s;
+     s=document.getElementById('one');
+     var n;
+    //  n=s.nextSibling.nextSibling;
+    n=s.parentNode;
+     console.log(n);
+
+    </script>
+  </body>
+</html>

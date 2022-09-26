@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  </head>
+  <body>
+    <h1>Hello there!</h1>
+    <a href="/me.html">My other page</a>
+  </body>
+
+  <script>
+    var a = 1;
+
+    while (a <= 100) {
+      if (a % 3 == 0 && a % 5 == 0) {
+        console.log('Fizzbuzz');
+      } else if (a % 5 == 0) {
+        console.log('Buzz');
+      } else if (a % 3 == 0) {
+        console.log('Fizz');
+      } else {
+        console.log(a);
+      }
+      a++;
+    }
+  </script>
+</html>

@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  </head>
+  <body>
+    <h1>Hello there!</h1>
+    <a href="/me.html">My other page</a>
+    <script>
+      // A JavaScript function is executed when "something" invokes it (calls it).
+
+      // JavaScript Function Syntax
+      // A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().
+
+      // Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).
+
+      // The parentheses may include parameter names separated by commas:
+      // (parameter1, parameter2, ...)
+
+      // The code to be executed, by the function, is placed inside curly brackets: {}
+
+      //Mainly there are two types of function
+      // built in and user defined function
+
+      // there are 4 ways to call user defined function
+
+      // without argument without return
+
+      function sum() {
+        var a = 10,
+          b = 20,
+          sum = 0;
+        sum = a + b;
+        document.write(sum);
+        document.write('<br>');
+      }
+
+      sum();
+
+      // without argument with return
+
+      function sub() {
+        var c = 10,
+          d = 2,
+          sub = 0;
+        sub = c + d;
+        return sub;
+      }
+
+      var r = sub();
+      document.write(r);
+      document.write('<br>');
+
+      // with argument without return
+
+      function mul(x, y) {
+        var m = 0;
+        m = x * y;
+        document.write(m);
+      }
+
+      mul(10, 2);
+      document.write('<br>');
+
+      // with argument with return
+
+      function div(p, q) {
+        d = p / q;
+        return d;
+      }
+
+      var divv = div(20, 10);
+      document.write(divv);
+    </script>
+  </body>
+</html>

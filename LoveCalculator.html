@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  </head>
+  <body>
+    <h1>Hello there!</h1>
+    <a href="/me.html">My other page</a>
+    <input type="text" name="num1" id="n1" />
+    <input type="text" name="num2" id="n2" />
+    <input type="text" name="num3" id="n3" />
+    <input type="button" value="Click" onclick="myfun()" />
+    <script>
+      function myfun() {
+        var fname = document.getElementById('n1').value;
+        var lname = document.getElementById('n2').value;
+
+        if (fname == '') {
+          alert('Please enter your name');
+        } else if (fname.length <= 2) {
+          alert('Please enter valid name');
+        } else if (!isNaN(fname)) {
+          alert('Numebrs area not allowed');
+        } else if (lname == '') {
+          alert('Please enter your name');
+        } else if (lname.length <= 2) {
+          alert('Please enter valid name');
+        } else if (!isNaN(lname)) {
+          alert('Numebrs area not allowed');
+        } else {
+          var lovedata = Math.random() * 100;
+          lovedata = Math.floor(lovedata);
+          document.getElementById('n3').value = lovedata + '%';
+        }
+      }
+    </script>
+  </body>
+</html>

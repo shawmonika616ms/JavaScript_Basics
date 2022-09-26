@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  </head>
+  <body>
+    <script>
+      //  <!-- Execution context, Scope chain and JavaScript internals
+      //   Execution context (EC) is defined as the environment in which JavaScript code is executed. By environment I mean the value of this, variables, objects, and functions JavaScript code has access to, constitutes it’s environment.
+      // Execution context, Scope chain and JavaScript internals
+      //   Execution context (EC) is defined as the environment in which JavaScript code is executed. By environment I mean the value of this, variables, objects, and functions JavaScript code has access to, constitutes its environment.
+
+      // Global execution context (GEC): This is the default execution context in which JS code start it’s execution when the file first loads in the browser. All the global code are executed inside global execution context. In the browser context, if the code is executing in strict mode value of this is undefined else it is window object. Global execution context cannot be more than one because only one global environment is possible for JS code execution.
+      // JavaScript engine creates the execution context in the following two stages:
+
+      //   Creation phase
+      //   Execution phase
+      //   Creation phase is the phase in which JS engines has called a function but it’s execution has not started. In the creation phase, JS engine is in the compilation phase and it scans over the function to compile the code.
+      // In creation phase, JS engine performs the following task:
+
+      //   Creates the Activation object or the variable object: Activation object is a special object in JS which contain all the variables, function arguments and inner functions declarations information. As activation object is a special object it does not have the dunder proto property.
+      // Creates the scope chain: Once the activation object gets created, JS engine initializes the scope chain which is a list of all the variables objects inside which the current function exists. This also includes the variable object of global execution context. Scope chain also contains the current function variable object.
+      //   Determines the value of this: After the scope chain, JavaScript engine initialize the value of ‘this’.
+      // Execution phase:
+
+      //   In the execution phase, JS engines will again scan through the function to update the variable object with the values of the variables and will execute the code.
+      //   javascript lexical scope
+      //   Scope Chain:
+      // Scope chain is a list of all the variable objects of functions inside which the current function exists. Scope chain also consists of the current function execution object. -->
+
+      var x = 0;
+      var y1 = 'Global var';
+      console.log(x);
+
+      f1();
+      function f1() {
+        var localvar = 'local var';
+        var y2 = 'inside func f1';
+        console.log(x);
+
+        f2();
+        function f2() {
+          var localvar = 'local var 2';
+          var y3 = 'inside func f2';
+          console.log(x);
+          // climb up the scope chain
+          console.log(y1);
+          console.log(y2);
+          console.log(y3);
+        }
+      }
+    </script>
+  </body>
+</html>
